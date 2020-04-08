@@ -1,14 +1,16 @@
-This a simple example of uploading newman report to Azure Blob storage after execution.
+This a basic example of uploading newman report to Azure Blob storage.
 
-I assume you already have an Azure account and the sufficient privileges in your organization to read/update an Azure Blob. 
+I assume you already have : 
+- Azure account and the sufficient privileges in your organization to read/update an Azure Blob. 
+- Basic knowledge of Postman and newman to run your API tests
 
 # Azure Credentials 
 When the sample application makes a request to Azure Storage, it must be authorized. To authorize a request, add your storage account credentials to the application as a connection string. View your storage account credentials by following these steps:
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Sign in to the **[Azure portal](https://portal.azure.com)**.
 2. Locate your storage account.
-3. In the Settings section of the storage account overview, select Access keys. Here, you can view your account access keys and the complete connection string for each key.
-4. Find the Connection string value under key1, and select the Copy button to copy the connection string. You will add the connection string value to an environment variable in the next step.
+3. In the **Settings** section of the storage account overview, select **Access keys**. Here, you can view your account access keys and the complete connection string for each key.
+4. Find the Connection string value under key1, and select the Copy button to copy the connection string. You will add the connection string to the environment file in future steps.
 
 
 ![Screenshot showing how to copy a connection string from the Azure portal](./resources/get_connection_string.png)
@@ -77,6 +79,9 @@ The report is something that looks like :
 
 ![Generated report](./resources/generated_report_example.png)
 
-You can access it through the link the console.log directly or go and download it directly from your Blob storage : 
+You can access it through the link in the console log directly or and download it from your Blob storage in the Azure Portal :  
 
 ![Download report from blob](./resources/download_report_from_container.png)
+
+
+This could also work for other type of automated test reports, like cypress or other JS based frameworks. 
