@@ -1,0 +1,22 @@
+{
+  "name": "upload-report-azureblob",
+  "version": "1.0.0",
+  "description": "Upload newman report file to Azure Blob Storage",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "newman",
+    "postman",
+    "azure"
+  ],
+  "author": "Mohammed Ali",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/storage-blob": "^12.0.0",
+    "dotenv": "^6.0.0",
+    "newman": "^4.6.1",
+    "newman-reporter-htmlextra": "^1.13.0"
+  }
+}
