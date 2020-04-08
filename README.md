@@ -75,7 +75,7 @@ Once the execution finishes, an HTML report file will be created in the local di
 
 The report is something that looks like :  
 
-![Generated report](./resources/generated_report_example.PNG)
+![Generated report](./resources/generated_report_example.png)
 
 You can access it through the link the console.log directly or go and download it directly from your Blob storage : 
 
