@@ -17,7 +17,7 @@ When an application makes a request to Azure Storage, it must be authorized. To 
 ![Screenshot showing how to copy a connection string from the Azure portal](./resources/get_connection_string.png)
 
 # Change the container access level
-The goal is that every one accesses the reports wether the report link is sent by email, slack message or other messaging system. 
+The goal is that every one accesses the reports whether the report link is sent by email, slack message or other messaging system. 
 
 1. Locate your storage account in Azure Portal
 2. In **Blob service** section of the storage account overview, select **Containers**
@@ -35,8 +35,8 @@ Create `.env` file and add your azure connection string in the following format 
 Change the `CONTAINER_NAME` variable value with your actual container name
 
 For this example I am using the [Postman Echo collection](https://postman-echo.com/). It is a public Postman collection that includes multiple tests in the requests. 
-> I have created a public accessible link of the collection in my workspace. This link could be changed in the future, so I strongly advice one of the following options to go further :  
-1.  **[Export a collection in JSON](https://learning.postman.com/docs/postman/collections/data-formats/#collections)** to get the collection file in your local fisk.
+> I have created a public accessible link of the collection in my workspace. This link could be changed in the future, so I strongly advise one of the following options to go further :  
+1.  **[Export a collection in JSON](https://learning.postman.com/docs/postman/collections/data-formats/#collections)** to get the collection file in your local disk.
 2. **[Generate a link](https://learning.postman.com/docs/postman/collections/sharing-collections/#sharing-collections-with-a-link)** to get a public accessible link for your collection.
 3.  **[Use the Postman API](https://learning.postman.com/docs/postman/postman-api/intro-api/)** to get a secured link for your collection.
 
